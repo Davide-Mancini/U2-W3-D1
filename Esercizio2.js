@@ -21,9 +21,6 @@ form.addEventListener("submit", function (e) {
     specieAnimaleInput.value,
     razzaAnimaleInput.value
   );
-  const lista = document.getElementById("listaul");
-  const nuovoli = document.createElement("li");
-  lista.appendChild(nuovoli);
   console.log("QUESTO è IL MIO ANIMALE", nuovoAnimale1);
 
   const liste = document.querySelectorAll("li");
@@ -38,5 +35,9 @@ form.addEventListener("submit", function (e) {
       " " +
       nuovoAnimale1.razzaAnimale;
   }
+  const lista = document.getElementById("listaul");
+  const nuovoli = document.createElement("li");
+  lista.appendChild(nuovoli);
   form.reset();
+  return;
 });
